@@ -16,7 +16,7 @@ internal class Program
 
         IDbConnection conn = new MySqlConnection(connString);
 
-
+        #region Department Section
         var departmentRepo = new DapperDepartmentRepository(conn);
 
         departmentRepo.InsertDepartment("Caris New Department");
@@ -30,5 +30,28 @@ internal class Program
             Console.WriteLine();
             Console.WriteLine();
         }
+        #endregion
+
+        #region Products Section
+        var productRepository = new DapperProductRepository(conn);
+
+        var products = productRepository.GetAllProducts();
+        
+        foreach (var product in products) 
+        {
+            Console.WriteLine(product.ProductID);
+            Console.WriteLine(product.Name);
+            Console.WriteLine(product.Price);
+            Console.WriteLine(product.CategoryID);
+            Console.WriteLine(product.OnSale);
+            Console.WriteLine(product.StockLevel);
+            Console.WriteLine();
+            Console.WriteLine();
+
+                
+        }
+        #endregion
+
+
     }
 }
