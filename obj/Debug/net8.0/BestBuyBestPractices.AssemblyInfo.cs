@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BestBuyBestPractices")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ab9d2eb0bb9e7ae03bf610829a4ea0bf6a4bbb5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BestBuyBestPractices")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BestBuyBestPractices")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
